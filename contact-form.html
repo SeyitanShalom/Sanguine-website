@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Contact form</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+
+			.learn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container {
+			width: 500px;
+			}
+
+      header {
+        margin-bottom: 1rem;
+      }
+
+      main h1 {
+        font-weight: 900;
+        margin-bottom: 1rem;
+      }
+
+      main form .name,
+      .email,
+      .department,
+      .message {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+
+      main form .name,
+      .email,
+      .department,
+      .message label {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+
+			main form .department select option{
+				font-size: 1rem;
+				padding: 2rem;
+			}
+
+      main form input,
+      select {
+        border-radius: 5px;
+        height: 38px;
+      }
+
+      main form textarea {
+        border-radius: 5px;
+      }
+
+      main form input,
+      select,
+      textarea {
+        border: none;
+        background-color: rgb(238, 238, 238);
+        transition: border 0.9s ease;
+      }
+
+      main form input:hover,
+      select:hover,
+      textarea:hover {
+        border: 1px solid rgb(255, 0, 0);
+      }
+
+      main form textarea {
+        resize: none;
+        height: 120px;
+      }
+
+      form button {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(53, 100, 255);
+        border: none;
+        margin: auto;
+        margin-top: 5rem;
+        width: 100%;
+        padding: 14px 28px;
+        border-radius: 7px;
+        color: aliceblue;
+        font-size: 1rem;
+        cursor: pointer;
+        /* display: block;
+        width: 100%;
+        border: none;
+        text-align: center;
+        background-color: rgb(28, 28, 214); */
+      }
+
+      form button:hover {
+        box-shadow: 0px 1px 5px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+							<header>
+				        <img src="images/contact-form/envelope.svg" alt="" />
+				      </header>
+				      <main>
+				        <h1>Let's get in touch</h1>
+				        <form action="">
+				          <div class="details">
+				            <div class="name">
+				              <label for="contact-name">Name</label>
+				              <input type="text" name="contact-name" id="contact-name" />
+				            </div>
+				            <div class="email">
+				              <label for="contact-email">Email Address</label>
+				              <input type="email" name="contact-email" id="contact-email" />
+				            </div>
+				            <div class="department">
+				              <label for="contact-department">Department</label>
+				              <select
+				                name="contact-department"
+				                id="contact-department"
+				                placeholder="select a department"
+				              >
+				                <option value="" selected hidden>Select a department</option>
+				                <option value="computer science">Computer Science</option>
+				                <option value="cyber security">Cyber Security</option>
+				                <option value="information technology">
+				                  Information Technology
+				                </option>
+				                <option value="information systems">Information Systems</option>
+				                <option value="software engineering">
+				                  Software Engineering
+				                </option>
+				              </select>
+				            </div>
+				            <div class="message">
+				              <label for="contact-message">Message</label>
+				              <textarea
+				                name="contact-message"
+				                id="contact-message"
+				                cols="30"
+				                rows="10"
+				              ></textarea>
+				            </div>
+				          </div>
+				          <div class="btn">
+				            <button>send message</button>
+				          </div>
+				        </form>
+				      </main>
+				      <!-- Practice area end -->
+				    </section>
+				
+				    <section class="preview" data-content="Contact form">
+				      <img
+				        width="560px"
+				        src="images/reference/contact-form.png"
+				        alt="Contact form"
+				      />
+			</div>
+    </section>
+  </body>
+</html>

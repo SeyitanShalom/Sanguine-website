@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Characters</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      .first {
+        background-image: url(images/characters/bg-elephant.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .first .elephant {
+        display: flex;
+        flex-direction: column;
+      }
+      .first .elephant .details {
+        display: flex;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <!-- <div class="first">
+        <div class="elephant">
+          <img
+            src="images/characters/bg-elephant.jpg"
+            alt="Elephant"
+            width="561"
+            height="297"
+          />
+        </div>
+        <div class="details">
+          <h1>The Viking</h1>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/characters/bg-cat.jpg"
+          alt="Elephant"
+          width="560"
+          height="297"
+        />
+      </div>
+      <div>
+        <img
+          src="images/characters/bg-bunny.jpg"
+          alt="Elephant"
+          width="561"
+          height="298"
+        />
+			</div> -->
+
+      <div class="first">
+        <div class="elephant">
+          <h1>The Viking</h1>
+          <div class="details">
+            <div>
+              <h2>68%</h2>
+              <br />
+              <p>Win Rate</p>
+            </div>
+            <div>
+              <h2>522</h2>
+              <br />
+              <p>Games Played</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Characters">
+      <img
+        width="720px"
+        src="images/reference/characters.png"
+        alt="Characters"
+      />
+    </section>
+  </body>
+</html>

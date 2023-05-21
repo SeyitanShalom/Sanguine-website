@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Order form</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
+      }
+
+      form h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .first input,
+      .second input,
+      .third input,
+      .sixth textarea {
+        border: 1px solid rgb(206, 203, 203);
+        border-radius: 5px;
+        outline: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+
+      .third select {
+        border: 1px solid rgb(206, 203, 203);
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+
+      .third select option {
+        padding: 1rem;
+      }
+
+      form .first {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 1rem;
+      }
+
+      form .first .name,
+      .email {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* flex-grow: inherit; */
+      }
+
+      form .first input {
+        height: 40px;
+        margin-bottom: 2rem;
+      }
+
+      form .second {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem 1rem;
+      }
+
+      form .second .input {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      form .second .input input {
+        height: 40px;
+        margin-bottom: 2rem;
+      }
+
+      .third {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+
+      form .third .city,
+      .state,
+      .zip {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .third input,
+      select {
+        height: 40px;
+      }
+
+      .third .state {
+        margin: 0 1rem;
+      }
+
+      input[type=checkbox], input[type=radio] {
+        transform: scale(1.5);
+        margin-right: 6px;
+      }
+
+      .fourth {
+        margin-bottom: 2rem;
+      }
+
+      .fourth .input-checkbox {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .fifth {
+        margin-bottom: 2rem;
+      }
+
+      .fifth .input-radio {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .sixth {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .sixth textarea {
+        resize: none;
+        height: 150px;
+      }
+
+      .seventh {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      button {
+        background-color: rgb(0, 76, 255);
+        color: whitesmoke;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <form action="">
+          <div><h1>Your Order</h1></div>
+          <div class="first">
+            <div class="name">
+              <label for="order-name">Name</label>
+              <input
+                type="text"
+                name="order-name"
+                id="order-name"
+                placeholder="Your full name..."
+              />
+            </div>
+            <div class="email">
+              <label for="order-email">Email address</label>
+              <input
+                type="email"
+                name="order-email"
+                id="order-email"
+                placeholder="Your email address..."
+              />
+            </div>
+          </div>
+
+          <div class="second">
+            <div class="address">
+              <label for="order-address1">Address</label>
+            <div class="input">
+              <input
+                type="text"
+                name="order-address1"
+                id="order-address1"
+                placeholder="Your home address..."
+              />
+              <input type="text" name="order-address1" id="order-address2" />
+            </div>
+          </div>
+
+          <div class="third">
+            <div class="city">
+              <label for="order-city">City</label>
+              <input
+                type="text"
+                name="order-city"
+                id="order-city"
+                placeholder="Your city..."
+              />
+            </div>
+            <div class="state">
+              <label for="state">State</label>
+              <select name="order-state" id="order-state">
+                <option value="" selected disabled>Select your state...</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="madrid">Madrid</option>
+                <option value="manchester">Manchester</option>
+                <option value="milan">Milan</option>
+                <option value="munich">Munich</option>
+              </select>
+            </div>
+            <div class="zip">
+              <label for="order-zip">Zip</label>
+              <input
+                type="text"
+                name="order-zip"
+                id="order-zip"
+                placeholder="Your zip number..."
+              />
+            </div>
+          </div>
+          <div class="fourth">
+            <label for="color-sample"
+              >What color sample should we send you?</label
+            >
+            <div class="input-checkbox">
+              <label for="color-white">
+                <input
+                  type="checkbox"
+                  name="color-sample"
+                  id="color-white"
+                  value="white"
+                  disabled
+                />
+                White
+              </label>
+              <label for="color-magenta">
+                <input
+                  type="checkbox"
+                  name="color-sample"
+                  id="color-magenta"
+                  value="magenta"
+                />
+                Magenta
+              </label>
+              <label for="color-coral">
+                <input
+                  type="checkbox"
+                  name="color-sample"
+                  id="color-coral"
+                  value="coral"
+                />
+                Coral
+              </label>
+              <label for="color-burgundy">
+                <input
+                  type="checkbox"
+                  name="color-sample"
+                  id="color-burgundy"
+                  value="burgundy"
+                />
+                Burgundy
+              </label>
+              <label for="color-charcoal">
+                <input
+                  type="checkbox"
+                  name="color-sample"
+                  id="color-charcoal"
+                  value="charcoal"
+                />
+                Charcoal
+              </label>
+            </div>
+          </div>
+
+          <div class="fifth">
+            <label for="">How large is your team?</label>
+            <div class="input-radio">
+              <label for="team-small">
+                <input
+                  type="radio"
+                  name="team-size"
+                  id="team-small"
+                  value="1-5"
+                />
+                1-5 people
+              </label>
+              <label for="team-medium">
+                <input
+                  type="radio"
+                  name="team-size"
+                  id="team-medium"
+                  value="6-10"
+                  checked
+                />
+                6-10 people
+              </label>
+              <label for="team-large">
+                <input
+                  type="radio"
+                  name="team-size"
+                  id="team-large"
+                  value="10+"
+                />
+                10+ people
+              </label>
+            </div>
+          </div>
+
+          <div class="sixth">
+            <label for="order-comment">Comments</label>
+            <textarea
+              name="order-comment"
+              id="order-comment"
+              cols="30"
+              rows="10"
+              placeholder="Please, also send me one of your catalogs so i can show your products to other people in my industry."
+            ></textarea>
+          </div>
+
+          <div class="seventh">
+            <label for="sign-up">
+              <input type="checkbox" name="sign-up" id="sign-up" /> Sign up for
+              special offers
+            </label>
+            <button>Place Order</button>
+          </div>
+        </form>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Order form">
+      <img
+        width="903px"
+        src="images/reference/order-form.png"
+        alt="Order form"
+      />
+    </section>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Hero</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+
+      .container {
+        background-color: aliceblue;
+        padding: 5rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+      }
+
+      header .logo img {
+        width: 3rem;
+      }
+
+      header .links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      header .links a {
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        transition: font-weight 0.2s;
+      }
+
+      header .links a:hover {
+        font-weight: 700;
+      }
+
+      header button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5rem;
+        border: 1px solid rgb(0, 84, 209);
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+        color: rgb(0, 84, 209);
+      }
+
+      header button img {
+        padding-left: 10px;
+        width: 1.9rem;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      main .details {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      main .details span {
+        color: rgb(0, 211, 0);
+      }
+      main .details h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: rgb(39, 39, 39);
+      }
+
+      main .details p {
+        margin-bottom: 2rem;
+        color: gray;
+      }
+      main .details {
+        display: inline;
+      }
+
+      main .details button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 119, 255);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5rem;
+        border: none;
+      }
+
+      main .details button img {
+        padding-left: 10px;
+      }
+
+      main .image img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <header>
+          <div class="logo">
+            <img src="images/hero/logo-wally.svg" alt="" />
+          </div>
+          <div class="links">
+            <a href="">Discover Wally</a>
+            <a href="">Pricing</a>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="btn">
+            <button>
+              Start Now <img src="images/hero/arrow-right-color.svg" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <div class="details">
+            <span>shopping made easy</span>
+            <h1>Create your digital wallet in just a few clicks.</h1>
+            <p>
+              Add your card and pay with your phone everywhere. <br />
+              Convinience is the key.
+            </p>
+            <button>
+              Buy It Now <img src="images/hero/arrow-right-white.svg" alt="" />
+            </button>
+          </div>
+          <div class="image">
+            <img src="images/hero/illustration.svg" alt="" />
+          </div>
+        </main>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Hero">
+      <img width="1915px" src="images/reference/hero-desktop.png" alt="Hero" />
+      <img width="704px" src="images/reference/hero-mobile.png" alt="Hero" />
+    </section>
+  </body>
+</html>

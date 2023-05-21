@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Table</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+
+      .learn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 800px;
+        padding: 2rem;
+        box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
+      }
+
+      table {
+        padding: 7rem;
+        max-width: 100%;
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      table,
+      tr {
+        border-collapse: collapse;
+        font-size: 12;
+        border: 1px solid rgb(221, 221, 221);
+      }
+
+      th {
+        padding: 1rem;
+      }
+
+      td {
+        padding: 1rem;
+      }
+
+      thead {
+        background-color: rgb(17, 21, 36);
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 15px;
+        text-align: left;
+      }
+
+      tfoot {
+        background-color: cornsilk;
+        font-weight: 500;
+      }
+
+      tr .processing {
+        background-color: rgb(0, 195, 255, 0.3);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        color: rgb(0, 134, 175);
+        font-weight: 600;
+      }
+
+      tr .success {
+        background-color: rgba(93, 255, 101, 0.3);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        color: rgb(0, 179, 9);
+        font-weight: 600;
+      }
+
+      tr .reverted {
+        background-color: rgba(255, 93, 93, 0.3);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        color: rgb(226, 0, 0);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <table>
+          <thead>
+            <div>
+              <h1>Payouts</h1>
+            </div>
+            <tr>
+              <th>PAYEE</th>
+              <th>AMOUNT</th>
+              <th>DATE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <b>John Wick</b><br />
+                Shoota Inc
+              </td>
+              <td>$42,272.23</td>
+              <td>Jan 13, 2022</td>
+              <td><span class="processing">Processing</span></td>
+            </tr>
+            <tr>
+              <td>
+                <b>Williem Dafoe</b><br />
+                Spider Inc
+              </td>
+              <td>$27,221.00</td>
+              <td>Dec 07, 2021</td>
+              <td><span class="success">Success</span></td>
+            </tr>
+            <tr>
+              <td>
+                <b>Chuck Norris</b><br />
+                Roundhouse Inc
+              </td>
+              <td>$6,982.00</td>
+              <td>0ct 20, 2021</td>
+              <td><span class="success">Success</span></td>
+            </tr>
+            <tr>
+              <td>
+                <b>Nick Cage</b><br />
+                Convicts Inc
+              </td>
+              <td>$13,821.72</td>
+              <td>Oct 14, 2021</td>
+              <td><span class="reverted">Reverted</span></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Total Paid</td>
+              <td colspan="3">$90,296,95</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Table">
+      <img width="903px" src="images/reference/table.png" alt="Table" />
+    </section>
+  </body>
+</html>

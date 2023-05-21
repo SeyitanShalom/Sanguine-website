@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Header</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+
+      .container {
+        padding: 1rem;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      }
+      header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      header img {
+        margin-left: -3rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .links a {
+        text-decoration: none;
+        font-family: poppins;
+        font-weight: 800;
+        color: black;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <header>
+          <figure>
+            <img src="images/header/logo.svg" alt="" />
+          </figure>
+
+          <div class="links">
+            <a href="">Portfolio</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">About Me</a>
+            <a href="">Contact</a>
+          </div>
+        </header>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Header">
+      <img width="945px" src="images/reference/header.png" alt="Header" />
+    </section>
+  </body>
+</html>

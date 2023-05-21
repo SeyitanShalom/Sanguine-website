@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Patterns</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+
+      .learn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-image: url(images/patterns/patterns.png);
+        text-align: center;
+        max-width: 1000px;
+        padding: 7rem;
+        box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.2);
+      }
+
+      .content {
+        background-color: white;
+        text-align: center;
+        padding: 5rem;
+        width: 100%;
+      }
+
+      figure img {
+        margin-bottom: 4rem;
+        width: 13rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3.5rem;
+        margin-bottom: 2.5rem;
+        color: rgb(41, 41, 41);
+      }
+
+      p {
+        color: gray;
+        margin-bottom: 4rem;
+      }
+
+      .lists ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .lists ul li {
+        list-style-type: none;
+        background-image: url("images/patterns/green-checkmark.svg");
+        background-repeat: no-repeat;
+        padding-left: 1.8rem;
+        color: gray;
+        margin-bottom: 4rem;
+      }
+
+      button {
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 196, 0));
+        color: white;
+        opacity: 1;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.1s ease;
+      }
+
+      button:hover {
+        /* background: linear-gradient(to right, rgb(255, 196, 0), rgb(255, 0, 0)); */
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <div class="content">
+          <figure>
+            <img src="images/patterns/envato-elements-logo-vector.svg" alt="" />
+          </figure>
+          <h1>The unlimited creative subscription</h1>
+          <p>
+            Unlimited downloads of 60+ million creative assets. <br />
+            From just $14.50/month.
+          </p>
+          <div class="lists">
+            <ul>
+              <li>Stock Videos</li>
+              <li>Music</li>
+              <li>Photos & Graphics</li>
+            </ul>
+          </div>
+          <button>Start 7-day free trial</button>
+        </div>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Patterns">
+      <img width="1112px" src="images/reference/patterns.png" alt="Patterns" />
+    </section>
+  </body>
+</html>

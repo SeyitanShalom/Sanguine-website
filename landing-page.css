@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0px 0 15px 0.5px gray;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(204, 134, 43);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+  background-color: rgb(204, 134, 43);
+  list-style-type: none;
+  width: 100%;
+  position: fixed;
+}
+
+header ul a {
+  color: aliceblue;
+  margin-left: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+header ul a:hover {
+  text-decoration: none;
+  color: brown;
+}
+
+#intro {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+#intro .logo {
+  display: flex;
+  justify-content: center;
+  padding: 15rem 0 5rem 0;
+}
+
+#intro .tagline h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+#intro .tagline p {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+#intro .btn {
+  width: 400px;
+  border: 1px solid rgb(204, 134, 43);
+  text-align: center;
+  border-radius: 3px;
+}
+
+button {
+  margin: 1rem 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button a {
+  text-decoration: none;
+}
+
+#chairs {
+  height: 100%;
+  padding: 1rem;
+  background-color: rgb(228, 226, 224);
+}
+
+#chairs .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#chairs .top h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+#chairs .top .span {
+  max-width: 700px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#chairs .chairs-set {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+#chairs .chairs-set div {
+  width: 400px;
+}
+
+#chairs .chairs-set img {
+  width: 100%;
+}
+
+#chairs .interest {
+  /* display: flex; */
+  text-align: center;
+  margin: 5rem 0 10rem;
+}
+
+.chairs-set h3 {
+  margin: 1rem 0 1rem;
+}
+
+.chairs-set p {
+  margin: 1rem 0 1rem;
+}
+
+.chairs-set .number {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: gray;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22, 31, 39);
+}
+
+#contact .header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+#contact p {
+  color: rgba(240, 248, 255, 0.5);
+}
+
+#contact form div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 1rem;
+  color: rgba(240, 248, 255, 0.5);
+}
+
+#contact form div input {
+  height: 40px;
+  background-color: rgba(240, 248, 255, 0.3);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+}
+
+#contact form div textarea {
+  resize: none;
+  height: 150px;
+  background-color: rgba(240, 248, 255, 0.3);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+}
+
+#contact .message-btn {
+  border: 1px solid rgba(240, 248, 255, 0.507);
+  border-radius: 5px;
+}
+
+button {
+  color: rgba(240, 248, 255, 0.5);
+  outline: none;
+}
+
+#visit {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  /* padding: 15rem 0 0 0; */
+}
+
+#visit .visit-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#visit .visit-details h1 {
+  font-size: 2rem;
+}
+
+#visit .social-media {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#visit p {
+  margin: 2rem 0 2rem;
+}
+
+#visit .address {
+  font-size: 1.5rem;
+}
+
+#visit .footer {
+  margin-top: 10rem;
+  width: 600px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  #chairs .chairs-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  #chairs .chairs-set div {
+    width: 80%;
+  }
+}
