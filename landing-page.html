@@ -89,34 +89,36 @@
     </section>
 
     <section id="contact">
-      <div class="header">
-        <p>CONTACT US</p>
-        <h2>Let's get in touch</h2>
+      <div class="contact-details">
+        <div class="header">
+          <p>CONTACT US</p>
+          <h2>Let's get in touch</h2>
+        </div>
+        <form action="">
+          <div>
+            <label for="contact-name">NAME</label>
+            <input type="text" name="contact-name" id="contact-name" required />
+          </div>
+          <div>
+            <label for="contact-email">EMAIL ADDRESS</label>
+            <input type="text" name="contact-email" id="contact-email" required />
+          </div>
+          <div>
+            <label for="contact-message">MESSAGE</label>
+            <textarea
+              name="contact-message"
+              id="contact-message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="message-btn">
+            <button>Send message</button>
+          </div>
+        </form>
+        <p>All fields are required. We'll get back to yo as soon as possible</p>
       </div>
-      <form action="">
-        <div>
-          <label for="contact-name">NAME</label>
-          <input type="text" name="contact-name" id="contact-name" required />
-        </div>
-        <div>
-          <label for="contact-email">EMAIL ADDRESS</label>
-          <input type="text" name="contact-email" id="contact-email" required />
-        </div>
-        <div>
-          <label for="contact-message">MESSAGE</label>
-          <textarea
-            name="contact-message"
-            id="contact-message"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
-        </div>
-        <div class="message-btn">
-          <button>Send message</button>
-        </div>
-      </form>
-      <p>All fields are required. We'll get back to yo as soon as possible</p>
     </section>
 
     <section id="visit">
