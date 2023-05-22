@@ -40,9 +40,9 @@ header ul {
   list-style-type: none;
   background-color: rgb(204, 134, 43);
   width: 100vw;
+  position: fixed;
   top: 0;
   right: 0;
-  position: fixed;
 }
 
 header ul a {
@@ -274,6 +274,15 @@ button {
 }
 
 @media (max-width: 480px) {
+  body {
+    width: 100vw;
+  }
+  header ul {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
   #chairs .chairs-set {
     display: flex;
     flex-direction: column;
