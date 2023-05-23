@@ -7,7 +7,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -36,18 +36,17 @@ a:hover {
 header ul {
   display: flex;
   justify-content: flex-end;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   list-style-type: none;
   background-color: rgb(204, 134, 43);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
 }
 
 header ul a {
   color: aliceblue;
-  margin-left: 1.5rem;
+  padding-right: 1.5rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -59,6 +58,7 @@ header ul a:hover {
 
 #intro {
   height: 820px;
+  width: 100%;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ header ul a:hover {
 #intro .tagline h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  max-width: 800px;
+  width: 100%;
   text-align: center;
 }
 
@@ -247,7 +247,7 @@ button {
   align-items: center;
   text-align: center;
   width: 70%;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 #visit .visit-details h1 {
@@ -269,11 +269,12 @@ button {
 
 #visit .footer {
   margin-top: 10rem;
-  width: 600px;
+  width: 50%;
   text-align: center;
+  /* margin-bottom: 5rem; */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 960px) {
   body {
     width: 100vw;
   }
@@ -306,5 +307,38 @@ button {
     font-size: 2rem;
     font-weight: 300;
     color: gray;
+  }
+
+  .header h2 {
+    font-size: 1.8rem;
+  }
+  #contact p {
+    font-size: 0.8rem;
+  }
+  #contact form div {
+    width: 300px;
+  }
+
+  #contact form div label {
+    font-size: 0.7rem;
+  }
+
+  #contact form div input {
+    height: 30px;
+  }
+
+  #contact form div textarea {
+    height: 110px;
+  }
+
+  #contact .message-btn {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    font-size: 0.9rem;
   }
 }
