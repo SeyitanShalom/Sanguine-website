@@ -231,6 +231,15 @@ button {
   outline: none;
 }
 
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+
 #visit {
   height: 820px;
   display: flex;
@@ -245,39 +254,24 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-items: flex-start;
   width: 70%;
-  margin-top: 8rem;
+  margin: 10rem;
 }
-
-#visit .visit-details h1 {
+.visit-details h1 {
   font-size: 2rem;
+  margin: 1rem 0;
 }
-
 #visit .social-media {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-#visit p {
-  margin: 2rem 0 2rem;
-}
-
-#visit .address {
-  font-size: 1.5rem;
 }
 
 #visit .footer {
   margin-top: 10rem;
-  width: 50%;
+  width: 80%;
   text-align: center;
-  /* margin-bottom: 5rem; */
 }
 
 @media (max-width: 960px) {
-  body {
-    width: 100vw;
-  }
   header ul {
     width: 100vw;
     position: fixed;
@@ -311,9 +305,11 @@ button {
 
   .header h2 {
     font-size: 1.8rem;
+    text-align: center;
   }
   #contact p {
     font-size: 0.8rem;
+    text-align: center;
   }
   #contact form div {
     width: 300px;
@@ -340,5 +336,11 @@ button {
 
   button {
     font-size: 0.9rem;
+  }
+
+  #visit .footer {
+    margin-top: 10rem;
+    width: 70%;
+    text-align: center;
   }
 }
