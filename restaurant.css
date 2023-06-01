@@ -41,12 +41,7 @@ header .logo {
   font-weight: 500;
 }
 header .menu-icon {
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: 0.4s;
-}
-header .menu-icon:hover {
-  color: var(--main-color);
+  display: none;
 }
 header .navbar {
   display: flex;
@@ -181,9 +176,6 @@ span {
   width: 300px;
   text-align: center;
 }
-.s-box:not(:last-child) {
-  margin-right: 2rem;
-}
 .s-box img {
   width: 70px;
 }
@@ -285,9 +277,17 @@ span {
   section {
     padding: 8rem 10% 2rem 10%;
   }
-  .menu-icon {
-    display: initial;
+  header .menu-icon {
+    display: inline-block;
     color: var(--text-color);
+  }
+  header .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  header .menu-icon:hover {
+    color: var(--main-color);
   }
   header .navbar {
     position: absolute;
