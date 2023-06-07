@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="header-text">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#design">Designs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-video">
+        <video
+          src="images/video1.mp4"
+          id="video-play"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+      <div class="home-text">
+        <p>Hello, i'm</p>
+        <h1>Arannilewa Seyitan</h1>
+        <h2>
+          A <span>Web Designer</span> and a <span>Graphic Designer.</span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="heading">
+        <h2>My <span>Service</span></h2>
+      </div>
+      <div class="container">
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Design</h3>
+          <p>
+            I make simple but not empty creative Designs and find much delight
+            in bringing ideas to life
+          </p>
+          <span>Tools used:</span>
+          <p>HTML, CSS, JavaScript, VS Code</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>Social Media Design</h3>
+          <p>
+            I make simple but not empty creative Designs and find much delight
+            in bringing ideas to life
+          </p>
+          <span>Tools used:</span>
+          <p>Photoshop, Illustrator</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="design" id="design">
+      <div class="heading">
+        <h2>My <span>Designs</span></h2>
+        <p>Take a look at some of my Social Media designs</p>
+      </div>
+      <div class="d-container">
+        <div class="row">
+          <img src="images/P-1.jpg" alt="" />
+          <div class="layer">
+            <h4>Church Design</h4>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/P-2.jpg" alt="" />
+          <div class="layer">
+            <h4>Food Design</h4>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/P-3.jpg" alt="" />
+          <div class="layer">
+            <h4>Party Design</h4>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/P-4.jpg" alt="" />
+          <div class="layer">
+            <h4>Event Design</h4>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/P-5.jpg" alt="" />
+          <div class="layer">
+            <h4>Brand Design</h4>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/P-6.jpg" alt="" />
+          <div class="layer">
+            <h4>New Month Design</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="">Click here</a> to see more creative designs on my instagram
+        page.
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="c-container">
+        <div class="c-text">
+          <h2>Contact <span>Me!</span></h2>
+          <p>If you have any project in your mind.</p>
+          <a href=""> 09064750948</a>
+          <a href="">seyitanarannilewa@gmail.com</a>
+          <div class="socials">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="c-form">
+          <form action="">
+            <input type="name" placeholder="Your Full Name" required />
+            <input type="email" placeholder="Your Email Address" required />
+            <input type="phone" placeholder="Your Mobile Number" required />
+            <textarea
+              name="name"
+              cols="30"
+              rows="10"
+              placeholder="How Can I Help You?"
+              required
+            ></textarea>
+            <input type="submit" value="Send Message" class="submit" required />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="Portfolio.js"></script>
+  </body>
+</html>
