@@ -34,7 +34,8 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background: transparent;
+  background: var(--second-bg-color);
+  border-bottom: 1px solid #444444;
 }
 header .sticky {
   position: sticky;
@@ -112,11 +113,12 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
   margin-top: 3rem;
-  background: var(--text-color);
   padding: 3rem;
   border-radius: 5px;
+  /* background: var(--text-color); */
   width: 100%;
 }
 .container .box {
@@ -273,11 +275,16 @@ textarea {
 
 @media (max-width: 1000px) {
   :root {
-    --h1-font: 2.5rem;
+    --h1-font: 2rem;
     --h2-font: 1rem;
-    --p-font: 0.9rem;
+    --p-font: 0.8rem;
   }
-
+  header {
+    padding: 12px 2rem;
+  }
+  .home-text h2 {
+    font-size: 1rem;
+  }
   .c-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -288,5 +295,21 @@ textarea {
   }
   .d-container {
     gap: 3rem;
+  }
+  .c-text h2 {
+    font-size: 1.7rem;
+  }
+  .c-form form input,
+  textarea {
+    font-size: 0.8rem;
+  }
+  .c-text p {
+    font-size: 0.8rem;
+  }
+  .c-text a {
+    font-size: 0.8rem;
+  }
+  .c-form form .submit {
+    font-size: 0.8rem;
   }
 }
