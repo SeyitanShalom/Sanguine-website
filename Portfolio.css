@@ -60,6 +60,7 @@ header .menu-icon {
 }
 .home {
   height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +196,7 @@ span {
 .row:hover .layer {
   height: 100%;
 }
-.footer {
+.footer p {
   margin-top: 3rem;
   text-align: center;
   color: var(--text-color);
@@ -279,8 +280,14 @@ textarea {
     --h2-font: 1rem;
     --p-font: 0.8rem;
   }
+  section {
+    padding: 6rem 15%;
+  }
   header {
     padding: 12px 2rem;
+  }
+  header ul li a {
+    font-size: 13px;
   }
   .home-text h2 {
     font-size: 1rem;
@@ -295,6 +302,9 @@ textarea {
   }
   .d-container {
     gap: 3rem;
+  }
+  .footer p {
+    font-size: var(--p-font);
   }
   .c-text h2 {
     font-size: 1.7rem;
