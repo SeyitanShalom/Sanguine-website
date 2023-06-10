@@ -155,7 +155,7 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   margin-top: 3rem;
 }
 .row {
@@ -274,7 +274,7 @@ textarea {
   color: var(--main-color);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
   :root {
     --h1-font: 2rem;
     --h2-font: 1rem;
