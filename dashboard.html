@@ -1,169 +1,252 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
-
-    <!-- This CSS and font is purely for presentational purposes. -->
-    <link rel="stylesheet" href="css/presentation.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <style>
-      /* Write your CSS here */
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: poppins;
-      }
-
-      .learn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container {
-        background-color: aliceblue;
-        padding: 3rem;
-        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
-      }
-
-      main {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 1rem;
-        max-width: 1000px;
-        margin-top: 3rem;
-      }
-
-      header h1 {
-        font-weight: 900;
-      }
-
-      section {
-        border: 1px dotted gray;
-        padding: 1rem;
-      }
-
-      section .image img {
-        width: 3rem;
-        margin-bottom: 2rem;
-      }
-
-      section .details {
-        margin-bottom: 1.5rem;
-      }
-
-      section .rate {
-        display: flex;
-        margin-bottom: 2rem;
-      }
-
-      section .rate img {
-        width: 1.3rem;
-      }
-
-      section .rate .green {
-        color: rgb(0, 179, 0);
-      }
-
-      section .rate .red {
-        color: rgb(207, 0, 0);
-      }
-
-      button {
-        display: flex;
-        align-items: center;
-        padding: 3px 12px;
-        border: 1px dotted gray;
-        background-color: aliceblue;
-      }
-
-      button img {
-        width: 1rem;
-        margin-left: 10px;
-      }
-    </style>
   </head>
-  <body class="flip">
-    <section class="learn">
-      <!-- Practice area start -->
-      <div class="container">
-        <header>
-          <h1>Dashboard</h1>
-        </header>
-
-        <main>
-          <section>
-            <div class="image">
-              <img src="images/dashboard/icon-money.svg" alt="" />
-            </div>
-            <div class="details">
-              <h2>$4,502</h2>
-              <p>Earned this month</p>
-            </div>
-            <div class="rate">
-              <img src="images/dashboard/icon-arrow-green.svg" alt="" />
-              <p><span class="green">+6.05%</span> than last month</p>
-            </div>
-            <button class="btn">
-              Earnings
-              <img src="images/dashboard/icon-arrow-right.svg" alt="" />
-            </button>
-          </section>
-
-          <section>
-            <div class="image">
-              <img src="images/dashboard/icon-sales.svg" alt="" />
-            </div>
-            <div class="details">
-              <h2>22</h2>
-              <p>New sales</p>
-            </div>
-            <div class="rate">
-              <img src="images/dashboard/icon-arrow-green.svg" alt="" />
-              <p><span class="green">+16.64%</span> than last month</p>
-            </div>
-            <button class="btn">
-              Sales
-              <img src="images/dashboard/icon-arrow-right.svg" alt="" />
-            </button>
-          </section>
-
-          <section>
-            <div class="image">
-              <img src="images/dashboard/icon-chat.svg" alt="" />
-            </div>
-            <div class="details">
-              <h2>7</h2>
-              <p>New comments</p>
-            </div>
-            <div class="rate">
-              <img src="images/dashboard/icon-arrow-red.svg" alt="" />
-              <p><span class="red">-19%</span> than last month</p>
-            </div>
-            <button class="btn">
-              Comments
-              <img src="images/dashboard/icon-arrow-right.svg" alt="" />
-            </button>
-          </section>
-        </main>
+  <body>
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <h2>EGA<span class="danger">TOR</span></h2>
+        </div>
+        <div class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </div>
-      <!-- Practice area end -->
-    </section>
+      <div class="sidebar">
+        <a href="#" class="clicked">
+          <i class="fa-solid fa-grip"></i>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-users"></i>
+          <h3>Customers</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-receipt"></i>
+          <h3>Orders</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3>Analytics</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-envelopes-bulk"></i>
+          <h3>Messages</h3>
+          <span class="word-count">26</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-database"></i>
+          <h3>Products</h3>
+        </a>
+        <a href="#">
+          <i class="fa-regular fa-circle-exclamation"></i>
+          <h3>Reports</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-gear"></i>
+          <h3>Settings</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-add"></i>
+          <h3>Add Product</h3>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+    <!----------------- END OF ASIDE ----------------->
 
-    <section class="preview" data-content="Dashboard">
-      <img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
-    </section>
+    <main>
+      <h2>Dashboard</h2>
+      <div class="date">
+        <input type="date" />
+      </div>
+      <div class="container">
+        <div class="sales">
+          <i class="fa-solid fa-chart-pie"></i>
+          <div class="middle">
+            <div class="details">
+              <h5>Total Sales</h5>
+              <h3>$25,024</h3>
+            </div>
+            <div class="stats">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <h5>81%</h5>
+            </div>
+          </div>
+          <small class="muted">Last 24 Hours</small>
+        </div>
+
+        <div class="expenses">
+          <i class="fa-solid fa-chart-simple"></i>
+          <div class="middle">
+            <div class="details">
+              <h5>Total Expenses</h5>
+              <h3>$14,160</h3>
+            </div>
+            <div class="stats">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+
+              <h5>62%</h5>
+            </div>
+          </div>
+          <small class="muted">Last 24 Hours</small>
+        </div>
+
+        <div class="income">
+          <i class="fa-solid fa-money-bill-transfer"></i>
+          <div class="middle">
+            <div class="details">
+              <h5>Total Income</h5>
+              <h3>$10,864</h3>
+            </div>
+            <div class="stats">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+
+              <h5>44%</h5>
+            </div>
+          </div>
+          <small class="muted">Last 24 Hours</small>
+        </div>
+      </div>
+
+      <div class="recent-orders">
+        <h3>Recent Orders</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Number</th>
+              <th>Payment</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <div class="open-btn"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="theme-toggler">
+          <span class="active"><i class="fa-solid fa-sun"></i></span>
+          <span class=""><i class="fa-solid fa-moon"></i></span>
+        </div>
+        <div class="profile">
+          <div class="profile-details">
+            <p>Hey, <b>Daniel</b></p>
+            <p>Admin</p>
+          </div>
+          <div class="profile-pic">
+            <img src="images/profile-1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="recent-updates">
+        <h3>Recent Updates</h3>
+        <div class="updates">
+          <div class="update">
+            <div class="update-image">
+              <img src="images/profile-2.jpg" alt="" />
+            </div>
+            <div class="update-details">
+              <p>
+                <b>Mike Tyson</b> recieved his order of Night lion tech GPS
+                drone.
+              </p>
+              <small class="muted">2 Minutes Ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="update-image">
+              <img src="images/profile-3.jpg" alt="" />
+            </div>
+            <div class="update-details">
+              <p><b>Diana Ayi</b> declined her order of 2 DJI Air 2S.</p>
+              <small class="muted">5 Minutes Ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="update-image">
+              <img src="images/profile-4.jpg" alt="" />
+            </div>
+            <div class="update-details">
+              <p>
+                <b>Mandy Roy</b> recieved his order of LARVENDER KF102 Drone.
+              </p>
+              <small class="muted">9 Minutes Ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-analytics">
+        <h3>Sales Analytics</h3>
+        <div class="analytics">
+          <div class="analytics-details">
+            <div class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="dets">
+              <h5>ONLINE ORDERS</h5>
+              <small class="muted">Last 24 Hours</small>
+            </div>
+          </div>
+          <p class="success">+39%</p>
+          <h5>3849</h5>
+        </div>
+        <div class="analytics">
+          <div class="analytics-details">
+            <div class="icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div class="dets">
+              <h5>ONLINE ORDERS</h5>
+              <small class="muted">Last 24 Hours</small>
+            </div>
+          </div>
+          <p class="danger">+39%</p>
+          <h5>3849</h5>
+        </div>
+        <div class="analytics">
+          <div class="analytics-details">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="dets">
+              <h5>ONLINE ORDERS</h5>
+              <small class="muted">Last 24 Hours</small>
+            </div>
+          </div>
+          <p class="success">+39%</p>
+          <h5>3849</h5>
+        </div>
+      </div>
+      <div class="add-product">
+        <i class="fa-solid fa-add"></i>
+
+        <h4>Add Product</h4>
+      </div>
+    </div>
+    <script src="orders.js"></script>
+    <script src="dashboard.js"></script>
   </body>
 </html>
