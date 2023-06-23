@@ -325,7 +325,7 @@ main h2 {
   margin-bottom: 1.5rem;
 }
 
-.open-bar i {
+.right .top .open-btn i {
   display: none;
 }
 
@@ -564,10 +564,10 @@ p {
     left: -100%;
     width: 13rem;
     background-color: var(--color-white);
-    height: 100%;
+    height: 100vh;
     box-shadow: 1rem 3rem 4rem var(--color-light);
-    padding-right: 1rem;
     display: none;
+    padding-right: 1rem;
     animation: showMenu 0.3s ease forwards;
   }
 
